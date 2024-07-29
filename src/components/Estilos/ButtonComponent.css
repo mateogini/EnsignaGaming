@@ -1,0 +1,13 @@
+
+button{
+    background-color: #b89bff;
+    border: none;
+    font-size: 20px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    color: #371c72;
+    margin-right: 50px;
+
+}
+button:hover{
+    color: white;
+}

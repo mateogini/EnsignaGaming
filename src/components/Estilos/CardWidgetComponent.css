@@ -1,0 +1,12 @@
+.carrito{
+    height: 30px;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+.cantidadCarrito{
+    color: #b89bff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: -1%;
+}
