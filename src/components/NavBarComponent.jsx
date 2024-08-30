@@ -1,12 +1,16 @@
+import { useEffect, useState } from 'react';
 import ButtonComponent from './ButtonComponent';
 import CardWidgetComponent from './CardWidgetComponent';
 import './Estilos/NavBarComponent.css';
+import { getCategory } from './asyncMock';
+import { Link } from 'react-router-dom';
 export default function NavBarComponent(){
+    
     return(
         <>
         <nav>
         <section className='section1'>
-         <img className="logo" src="/src/components/img/logo.png"></img>
+        <Link to={'/'} className='logo'><img className="logo" src="/src/components/img/logo.png"></img></Link>
          <input type="text" placeholder='Buscar' className='inputSearch'/>
          <CardWidgetComponent/>
          </section>

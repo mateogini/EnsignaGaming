@@ -1,0 +1,75 @@
+
+.nft {
+    width: 265px;
+    height: 265px;
+    box-shadow: 0 7px 20px 5px #00000015;
+    transition: .5s all;
+    margin: 30px;
+}
+
+.nft hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #8888882d;
+    margin-top: 0;
+}
+
+.nft .main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem;
+    align-items: center;
+}
+
+.nft .tokenImage {
+    width: 150px;
+    height: 150px;
+   
+}
+
+.nft .description {
+    margin: .5rem 0;
+    color: #000000;
+    font-size: 14px;
+}
+
+.nft .tokenInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nft .price {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-weight: 700;
+}
+
+.nft .price p {
+    margin: 0;
+}
+
+
+
+.nft:hover {
+    border: 1px solid #ffffff44;
+    box-shadow: 0 7px 50px 10px #000000aa;
+    transform: scale(1.015);
+}
+
+.nft:hover::before {
+    filter: brightness(.5);
+    top: -100%;
+    left: 200%;
+}
+.nft h2{
+    width: 225px;
+    height: 19px;
+    font-size: 17px;
+    word-wrap: break-word;      /* Permite que el texto largo se ajuste y se divida en el contenedor */
+    display: flex;
+    justify-content: center;
+}
