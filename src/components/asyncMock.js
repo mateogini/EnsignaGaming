@@ -11,7 +11,7 @@ const productos = [
     {
         id: 2,
         nombre: "Computadora de Escritorio HP",
-        categoria: "PcEscritorio",
+        categoria: "PC's de Escritorio",
         especificaciones: "Intel i5, 8GB RAM, 256GB SSD",
         precio: 549.99,
         stock: 10,
@@ -20,7 +20,7 @@ const productos = [
     {
         id: 3,
         nombre: "Notebook Dell Inspiron",
-        categoria: "Nootebook",
+        categoria: "Notebook",
         especificaciones: "Intel i5, 8GB RAM, 512GB SSD, 15.6\"",
         precio: 699.99,
         stock: 7,
@@ -47,7 +47,7 @@ const productos = [
     {
         id: 6,
         nombre: "Computadora de Escritorio Lenovo",
-        categoria: "PcEscritorio",
+        categoria: "PC's de Escritorio",
         especificaciones: "Intel i7, 16GB RAM, 512GB SSD, GTX 1650",
         precio: 849.99,
         stock: 8,
@@ -84,7 +84,7 @@ const productos = [
     {
         id: 10,
         nombre: "Computadora de Escritorio Dell OptiPlex",
-        categoria: "PcEscritorio",
+        categoria: "PC's de Escritorio",
         especificaciones: "Intel i3, 4GB RAM, 1TB HDD",
         precio: 399.99,
         stock: 15,
@@ -123,6 +123,8 @@ export const getCategory = (cat) => {
         resolve(productos.filter((prod) => prod.categoria.toLowerCase() === category));
     });
 }
-
+export const getProduct = (nombre) => {
+    return productos.find((prod) => prod.nombre === nombre);
+};
 
 

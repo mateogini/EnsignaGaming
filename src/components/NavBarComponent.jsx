@@ -14,10 +14,10 @@ export default function NavBarComponent(){
          </section>
          <section className='section2'>
          <div className='botonesSection2'>
-         <ButtonComponent categoria="PC's de Escritorio" cat="pcescritorio"/>
-         <ButtonComponent categoria="Nootebook" cat="notebook"/>
-         <ButtonComponent categoria="Productos" cat="productos"/>
-         <ButtonComponent categoria="Monitores" cat="monitores"/>
+         <ButtonComponent categoria="PC's de Escritorio"/>
+         <ButtonComponent categoria="Notebook"/>
+         <ButtonComponent categoria="Productos"/>
+         <ButtonComponent categoria="Monitores"/>
          </div>
          </section>
 

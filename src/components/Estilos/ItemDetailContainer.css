@@ -1,0 +1,39 @@
+.card{
+    display: flex;
+    margin-left: 30%;
+    width: 70%;
+    margin-top: 2%;
+}
+.imgProd {
+    width: 460px;
+    height: 400px;
+}
+/* .title, .price, .espe{
+    margin-top: 10%;
+    margin-bottom: 10%;
+} */
+.info{
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+hr{
+    color: #5f5f5f;
+    height: 1px;
+    width: 100%;
+}
+.btn{
+    width: 200px;
+    height: 35px;
+    border-radius: 5px; /* Bordes redondeados opcional */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: box-shadow 0.3s ease; /* Animación suave de la sombra */
+}
+/* styles.css */
+.ruta {
+    font-size: 16px;
+    color: #5f5f5f;
+  }
+  

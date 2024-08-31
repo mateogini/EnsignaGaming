@@ -1,0 +1,40 @@
+footer{
+    height: 250px;
+    
+    width: 100%;
+    background-color: #b89bff;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #a27dff;
+    height: 60px;
+    margin: 0;
+    align-items: center;
+}
+ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0;            /* Elimina el espaciado interno por defecto */
+    margin: 0;             /* Elimina el margen por defecto */
+  }
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+.footer1{
+    margin-top: 10px;
+}  
+.atCliente{
+    display: flex;
+    flex-direction: column;
+}
+.footer2{
+    width: 300px;
+}
+.footer3 img{
+    width: 200px;
+    height: 150px;
+}
