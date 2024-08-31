@@ -11,11 +11,11 @@ const productos = [
     {
         id: 2,
         nombre: "Computadora de Escritorio HP",
-        categoria: "PC's de Escritorio",
+        categoria: "PcEscritorio",
         especificaciones: "Intel i5, 8GB RAM, 256GB SSD",
         precio: 549.99,
         stock: 10,
-        imagen: "https://www.hp.com/us-en/shop/app/assets/images/product/4ce49aa_1_2.png"
+        imagen: "https://d22k5h68hofcrd.cloudfront.net/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/6/B/6B9D1LA-3_T1679651756.png"
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const productos = [
         especificaciones: "Intel i5, 8GB RAM, 512GB SSD, 15.6\"",
         precio: 699.99,
         stock: 7,
-        imagen: "https://i.dell.com/sites/csimages/Marketing/hp-laptops-inspiron-15-3593-hero.png"
+        imagen: "https://pccenter.com.ar/cdn/shop/files/FotosTiend2faOnline333_1.jpg?v=1690815205"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const productos = [
         especificaciones: "Resolución 1920x1080, 75Hz, HDMI",
         precio: 129.99,
         stock: 20,
-        imagen: "https://images.samsung.com/is/image/samsung/p5/uk/monitor/27t35f-01.jpg"
+        imagen: "https://images.fravega.com/f1000/32397e21c5240c13f2d32ad3842cd3e8.jpg"
     },
     {
         id: 5,
@@ -42,16 +42,16 @@ const productos = [
         especificaciones: "6GB GDDR5, 192-bit, PCIe 3.0",
         precio: 229.99,
         stock: 12,
-        imagen: "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce-gtx-1660ti/gtx1660ti-gtx1660ti-600x600.png"
+        imagen: "https://fullh4rd.com.ar/img/productos/3/video-geforce-gtx-1660-6gb-gigabyte-oc-nv-0.jpg"
     },
     {
         id: 6,
         nombre: "Computadora de Escritorio Lenovo",
-        categoria: "PC's de Escritorio",
+        categoria: "PcEscritorio",
         especificaciones: "Intel i7, 16GB RAM, 512GB SSD, GTX 1650",
         precio: 849.99,
         stock: 8,
-        imagen: "https://static.lenovo.com/medias/2021/10/21/lenovo-ideacentre-5i-01.jpg"
+        imagen: "https://p1-ofp.static.pub/medias/bWFzdGVyfHJvb3R8MjYxMDM5fGltYWdlL3BuZ3xoYmQvaGIwLzE0MjU3NjUzMzE3NjYyLnBuZ3wwM2U2ZTY5MmEwMGVkYzM0ZjMxMzA2OTMxYWM3OGFjZGFmYjI5ODQ2NjUxODUzY2I2YTZiMmNhMDUxODExZDVk/lenovo-monitor-ideacentre-aio-3-21.5-amd-subseries-hero.png"
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ const productos = [
         especificaciones: "AMD Ryzen 5, 8GB RAM, 256GB SSD, 14\"",
         precio: 599.99,
         stock: 5,
-        imagen: "https://www.hp.com/us-en/shop/app/assets/images/product/1c7d7aa_1.png"
+        imagen: "https://ar-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/6/N/6N1B2LA-1_T1683065780.png"
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ const productos = [
         especificaciones: "Resolución 2560x1440, 75Hz, HDMI, DisplayPort",
         precio: 249.99,
         stock: 10,
-        imagen: "https://www.lg.com/us/images/monitors/md06009722/gallery/desktop-01.jpg"
+        imagen: "https://s3-sa-east-1.amazonaws.com/saasargentina/9w5fMOuihRfDYhHx2KM0/imagen"
     },
     // Productos adicionales
     {
@@ -79,16 +79,16 @@ const productos = [
         especificaciones: "16GB (2x8GB) DDR4, 3200MHz",
         precio: 89.99,
         stock: 25,
-        imagen: "https://www.corsair.com/medias/sys_master/images/hfc/h0d/10362293637214/CMK16GX4M2B3200C16_hero.png"
+        imagen: "https://mla-s1-p.mlstatic.com/872608-MLA52050811717_102022-F.jpg"
     },
     {
         id: 10,
         nombre: "Computadora de Escritorio Dell OptiPlex",
-        categoria: "PC's de Escritorio",
+        categoria: "PcEscritorio",
         especificaciones: "Intel i3, 4GB RAM, 1TB HDD",
         precio: 399.99,
         stock: 15,
-        imagen: "https://www.dell.com/support/home/en-us/product-support/product/optiplex-3060-mini-desktop/overview"
+        imagen: "https://m.media-amazon.com/images/I/81MJdOFj+mL.jpg"
     },
     {
         id: 11,
@@ -97,7 +97,7 @@ const productos = [
         especificaciones: "Intel i7, 16GB RAM, 1TB SSD, 13.3\"",
         precio: 1199.99,
         stock: 4,
-        imagen: "https://www.asus.com/media/global/products/MV6YwAOdHIlmZQeo/P_500.png"
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_896421-MLA46546043157_062021-O.webp"
     },
     {
         id: 12,
@@ -106,7 +106,7 @@ const productos = [
         especificaciones: "Resolución 2560x1440, 144Hz, G-Sync, HDMI, DisplayPort",
         precio: 499.99,
         stock: 6,
-        imagen: "https://www.acer.com/ac/en/US/content/series/predator-x27"
+        imagen: "https://images-cdn.ubuy.co.in/6350e32d2b423d5a0e351fe4-acer-predator-xb271hu-abmiprz-27-inch.jpg"
     }
 ];
 
@@ -118,9 +118,11 @@ export const getProducts = () => {
     });
 }
 export const getCategory = (cat) => { 
-    
-    return new Promise ((resolve) =>{
-        resolve(productos.filter((prod) => prod.categoria == cat))
-    })
+    const category = cat.toLowerCase();
+    return new Promise((resolve) => {
+        resolve(productos.filter((prod) => prod.categoria.toLowerCase() === category));
+    });
 }
+
+
 

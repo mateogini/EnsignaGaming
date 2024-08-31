@@ -1,8 +1,6 @@
-import { useEffect, useState } from 'react';
 import ButtonComponent from './ButtonComponent';
 import CardWidgetComponent from './CardWidgetComponent';
 import './Estilos/NavBarComponent.css';
-import { getCategory } from './asyncMock';
 import { Link } from 'react-router-dom';
 export default function NavBarComponent(){
     
@@ -16,12 +14,10 @@ export default function NavBarComponent(){
          </section>
          <section className='section2'>
          <div className='botonesSection2'>
-         <ButtonComponent categoria="PC's de Escritorio"/>
-         <ButtonComponent categoria="Nootebook"/>
-         <ButtonComponent categoria="Productos"/>
-         <ButtonComponent categoria="Monitores"/>
-         <ButtonComponent categoria="Arma Tu Pc"/>
-         <ButtonComponent categoria="Ayuda"/>
+         <ButtonComponent categoria="PC's de Escritorio" cat="pcescritorio"/>
+         <ButtonComponent categoria="Nootebook" cat="notebook"/>
+         <ButtonComponent categoria="Productos" cat="productos"/>
+         <ButtonComponent categoria="Monitores" cat="monitores"/>
          </div>
          </section>
 
