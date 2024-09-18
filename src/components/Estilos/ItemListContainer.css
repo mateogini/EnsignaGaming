@@ -8,3 +8,15 @@
 .titulo{
     margin-left: 17%;
 }
+.ciber1{
+    width: 800px;
+    height: 300px;
+    margin-left: 23%;
+    margin-top: 2%;
+}
+.ciber2{
+    z-index: 3;
+    margin-top: -1000%;
+    height: 500px;
+    margin-left: 4%;
+}
