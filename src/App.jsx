@@ -6,6 +6,7 @@ import NavBarComponent from './components/NavBarComponent';
 import FooterComponent from './components/FooterComponent';
 import { CartProvider } from './components/context/CartContext';
 import CartListContainer from './components/CartListContainer';
+import BuyFormComponent from './components/BuyFormComponent';
 
 
 
@@ -37,6 +38,8 @@ function App() {
             <Route exact path="/category/:catId" element={<ItemListContainer />} />
             <Route exact path="/item/:prodId" element={<ItemDetailContainer />} />
             <Route exact path="/cart" element={<CartListContainer />} />
+            <Route exact path="/buy" element={<BuyFormComponent />} />
+
           </Routes>
   
         </CartProvider>
