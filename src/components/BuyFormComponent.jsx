@@ -1,7 +1,7 @@
 export default function BuyFormComponent(){
     return (
         <>
-            <h1>puto</h1>
+            <form action=""></form>
         </>
     )
 }
