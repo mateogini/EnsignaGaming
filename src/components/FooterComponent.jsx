@@ -25,7 +25,7 @@ return(
 
             </div>
             <div className='footer3'>
-            <img className="logo" src="/src/components/img/logo.png" alt='Logo'/>
+            <img className="logo" src="../EnsignaGaming/src/components/img/logo.png" alt='Logo'/>
             </div>
             <div className='footer2'>
                 <h3>Diseño y Desarrollado</h3>

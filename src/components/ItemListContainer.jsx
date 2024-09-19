@@ -48,7 +48,7 @@ export default function ItemListContainer() {
 
     return (
         <>
-            {img ? <img src="/src/assets/ciberGrande.jpg" alt="ciberMonday" className='ciber1' /> : null}
+            {img ? <img src="../EnsignaGaming/src/assets/ciberGrande.jpg" alt="ciberMonday" className='ciber1' /> : null}
 
             <h1 className="titulo">{titulo}</h1>
             <div className="container">
@@ -62,7 +62,7 @@ export default function ItemListContainer() {
                     <ItemCardContainer key={prod.id} prod={prod} />
                 ))}
             </div>
-            {img ? <img src="/src/assets/ciberLargo2.jpg" alt="ciberMonday" className='ciber2' /> : null}
+            {img ? <img src="../EnsignaGaming/src/assets/ciberLargo2.jpg" alt="ciberMonday" className='ciber2' /> : null}
 
             <div className="container">
                 {products.map((prod) => (

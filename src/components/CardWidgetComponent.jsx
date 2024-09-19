@@ -6,7 +6,7 @@ export default function CardWidgetComponent(){
     const [cart,,] = useContext(CartContext);
     return (
         <>
-          <Link to={`/cart`} className='carrito' ><img className="carrito" src="/src/components/img/carrito.png" alt="carrito" />
+          <Link to={`/cart`} className='carrito' ><img className="carrito" src="../EnsignaGaming/src/components/img/carrito.png" alt="carrito" />
           
             <p className='cantidadCarrito'>{cart.length}</p>
             </Link>
