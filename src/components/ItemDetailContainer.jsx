@@ -56,11 +56,15 @@ export default function ItemDetailContainer({}) {
           <h3 className="price">PRECIO: ${product.precio}</h3>
           <hr />
           <div className="countAdd">
-            <button className="btnDecInc" onClick={handleClickDec}>-</button>
+            <button className="btnDecInc" onClick={handleClickDec}>
+              -
+            </button>
             <button className="btn" onClick={() => handleClick(product, cant)}>
               Agregar al carrito {cant}
             </button>
-            <button className="btnDecInc" onClick={handleClickInc}>+</button>
+            <button className="btnDecInc" onClick={handleClickInc}>
+              +
+            </button>
           </div>
         </div>
       </section>

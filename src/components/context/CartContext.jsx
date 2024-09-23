@@ -1,7 +1,12 @@
+import { getFirestore, updateDoc, doc, collection, addDoc } from "firebase/firestore";
 import { createContext, useState } from "react";
+import { useNavigate } from 'react-router-dom';
+
 export const CartContext = createContext();
 
 export function CartProvider({ children }) {
+  const navigate = useNavigate(); // Hook para redirigir
+
   const [cart, setCart] = useState([]);
   const addItem = (item, cant) => {
     const newItems = Array(cant).fill(item);
@@ -26,14 +31,43 @@ export function CartProvider({ children }) {
     });
     return count;
   };
-  const deleteItemComplete = (id) =>{
+  const deleteItemComplete = (id) => {
     const cartFilter = cart.filter((c) => c.id !== id);
-    setCart(cartFilter); 
-  }
+    setCart(cartFilter);
+  };
+  const [orderId, setOrderId] = useState();
+  
+  const createNewOrder = (order) => {
+     const db = getFirestore();
 
+    const orders = collection(db,'orders')
+
+    addDoc(orders,order).then((snapshot) =>{
+      setOrderId(snapshot.id)
+      
+      const getDoc = doc(db,'order',snapshot.id)
+
+      updateDoc(getDoc,{orderId:snapshot.id})
+
+     // alert(snapshot.id);
+      clear();
+    });
+  };
+  
   return (
     <CartContext.Provider
-      value={[cart, setCart, addItem, deleteItem, clear, cant, deleteItemComplete]}
+      value={[
+        cart,
+        setCart,
+        addItem,
+        deleteItem,
+        clear,
+        cant,
+        deleteItemComplete,
+        createNewOrder, 
+        orderId,
+        setOrderId
+      ]}
     >
       {children}
     </CartContext.Provider>

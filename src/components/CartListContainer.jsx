@@ -5,12 +5,8 @@ import "./Estilos/CartListContainer.css";
 import { Link } from "react-router-dom";
 
 export default function CartListContainer() {
-  const [cart, ,] = useContext(CartContext);
-  const [, , , deleteItem] = useContext(CartContext);
-  const [, , , , clear] = useContext(CartContext);
-  const [, , , , , cant] = useContext(CartContext);
-  const [, , , , , , deleteItemComplete] = useContext(CartContext);
-  const [, , addItem] = useContext(CartContext);
+  const [cart, , addItem, deleteItem, clear, cant, deleteItemComplete] =
+    useContext(CartContext);
 
   const [total, setTotal] = useState(0);
   useEffect(() => {
@@ -90,7 +86,10 @@ export default function CartListContainer() {
               {cart.length > 0 && (
                 <>
                   <h2>El precio total es: ${total}</h2>
-                  <button className="btn"> <Link to={'/buy'}>Comprar</Link></button>
+                  <button className="btn">
+                    {" "}
+                    <Link to={"/buy"} prop="puto">Comprar</Link>
+                  </button>
                 </>
               )}
             </div>
