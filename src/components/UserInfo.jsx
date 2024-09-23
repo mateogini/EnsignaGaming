@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function UserInfo({ carrito, createNewOrder, total}) {
+export default function UserInfo({ carrito, createNewOrder, total }) {
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
   const [telefono, setTelefono] = useState("");
@@ -11,7 +11,7 @@ export default function UserInfo({ carrito, createNewOrder, total}) {
   const iguales = () => {
     return email2 === email;
   };
- 
+
   const handleSubmit = () => {
     // Verificamos si los emails son iguales antes de continuar
     if (!iguales()) {
@@ -30,11 +30,11 @@ export default function UserInfo({ carrito, createNewOrder, total}) {
     };
     createNewOrder(order);
     setError(null);
-}
+  };
 
   return (
     <>
-        <div className="formBuy">
+      <div className="formBuy">
         <input
           type="text"
           placeholder="Nombre"
@@ -69,9 +69,8 @@ export default function UserInfo({ carrito, createNewOrder, total}) {
         <hr className="hrTitle" />
       </div>
       <div>
-        <button onClick={handleSubmit}>Finalizar Compra</button>
-      </div>      
-      
+        <button onClick={handleSubmit} style={{marginLeft:'45%'}}>Finalizar Compra</button>
+      </div>
     </>
   );
 }

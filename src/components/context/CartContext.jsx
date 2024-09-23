@@ -1,11 +1,9 @@
 import { getFirestore, updateDoc, doc, collection, addDoc } from "firebase/firestore";
 import { createContext, useState } from "react";
-import { useNavigate } from 'react-router-dom';
 
 export const CartContext = createContext();
 
 export function CartProvider({ children }) {
-  const navigate = useNavigate(); // Hook para redirigir
 
   const [cart, setCart] = useState([]);
   const addItem = (item, cant) => {

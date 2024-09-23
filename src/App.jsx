@@ -7,32 +7,33 @@ import FooterComponent from "./components/FooterComponent";
 import { CartProvider } from "./components/context/CartContext";
 import CartListContainer from "./components/CartListContainer";
 import BuyFormComponent from "./components/BuyFormComponent";
+import MyOrdersComponent from "./components/MyOrdersComponent";
 
 function App() {
- 
-
   return (
     <>
       <BrowserRouter>
-          <CartProvider>
-            <NavBarComponent />
-            <Routes>
-              <Route exact path="/" element={<ItemListContainer />} />
+        <CartProvider>
+          <NavBarComponent />
+          <Routes>
+            <Route exact path="/" element={<ItemListContainer />} />
 
-              <Route
-                exact
-                path="/category/:catId"
-                element={<ItemListContainer />}
-              />
-              <Route
-                exact
-                path="/item/:prodId"
-                element={<ItemDetailContainer />}
-              />
-              <Route exact path="/cart" element={<CartListContainer />} />
-              <Route exact path="/buy" element={<BuyFormComponent />} />
-            </Routes>
-          </CartProvider>
+            <Route
+              exact
+              path="/category/:catId"
+              element={<ItemListContainer />}
+            />
+            <Route
+              exact
+              path="/item/:prodId"
+              element={<ItemDetailContainer />}
+            />
+            <Route exact path="/cart" element={<CartListContainer />} />
+            <Route exact path="/buy" element={<BuyFormComponent />} />
+            <Route exact path="/myorders" element={<MyOrdersComponent />} />
+
+          </Routes>
+        </CartProvider>
 
         <FooterComponent />
       </BrowserRouter>
