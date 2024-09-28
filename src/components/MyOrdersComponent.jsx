@@ -51,7 +51,7 @@ export default function MyOrdersComponent() {
             <h3 style={{ margin: "auto" }}>
               La orden {order} contiene estos productos
             </h3>
-            <div style={{ display: "flex", flexDirection: "row" }}>
+            <div style={{ display: "flex", flexDirection: "row",flexWrap:"wrap" }}>
               {myOrders.items.map((subItem) => (
                 <ItemCardContainer key={subItem.id} prod={subItem} />
               ))}
