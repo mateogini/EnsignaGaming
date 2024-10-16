@@ -9,14 +9,14 @@ export default function CardWidgetComponent() {
       <Link to={`/cart`} className="carrito">
         <img
           className="carrito"
-          src="/src/components/img/carrito.png"
+          src="/img/carrito.png"
           alt="carrito"
         />
 
         <p className="cantidadCarrito">{cart.length}</p>
       </Link>
       <Link to={'/myorders'} className="carrito">
-      <img src="./src/assets/orders.png" alt="orders" className="carrito"
+      <img src="/assets/orders.png" alt="orders" className="carrito"
       style={{marginLeft:'-400%'}} />
       </Link>
     </>

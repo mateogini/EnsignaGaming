@@ -40,7 +40,7 @@ export default function FooterComponent() {
           <div className="footer3">
             <img
               className="logo"
-              src="/src/components/img/logo.png"
+              src="/img/logo.png"
               alt="Logo"
             />
           </div>

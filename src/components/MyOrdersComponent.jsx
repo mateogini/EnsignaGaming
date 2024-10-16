@@ -1,7 +1,6 @@
 import { getDoc, getFirestore, doc } from "firebase/firestore";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ItemCardContainer from "./ItemCardContainer";
-import { CartContext } from "./context/CartContext";
 
 export default function MyOrdersComponent() {
   const [myOrders, setMyOrders] = useState({ items: [] }); // Inicializa como un objeto con items

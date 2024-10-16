@@ -57,7 +57,7 @@ export default function ItemListContainer() {
     <>
       {img ? (
         <img
-          src="./src/assets/ciberGrande.jpg"
+          src="/assets/ciberGrande.jpg"
           alt="ciberMonday"
           className="ciber1"
         />
@@ -77,7 +77,7 @@ export default function ItemListContainer() {
       </div>
       {img ? (
         <img
-          src="./src/assets/ciberLargo2.jpg"
+          src="/assets/ciberLargo2.jpg"
           alt="ciberMonday"
           className="ciber2"
         />

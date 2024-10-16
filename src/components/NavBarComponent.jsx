@@ -9,7 +9,7 @@ export default function NavBarComponent() {
       <nav>
         <section className="section1">
           <Link to={"/"} className="logo">
-            <img className="logo" src="/src/components/img/logo.png"></img>
+            <img className="logo" src="/img/logo.png"></img>
           </Link>
           <input type="text" placeholder="Buscar" className="inputSearch" />
           <CardWidgetComponent />

@@ -18,6 +18,10 @@ export default function UserInfo({ carrito, createNewOrder, total }) {
       setError("Los correos electrónicos no coinciden");
       return;
     }
+    if(nombre === "" || apellido === "" || telefono === "" || email === "" || email2 === "" ){
+      setError("Completa todos los campos");
+      return;
+    }
     const order = {
       buyer: {
         apellido,
